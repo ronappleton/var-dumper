@@ -16,18 +16,15 @@
         }
     ],
     "require": {
-        "php": "^5.5.9",
-        "symfony/polyfill-mbstring": "~1.0",
-        "symfony/polyfill-php80": "^1.15"
+        "php": "^5.5.9"
     },
     "require-dev": {
         "ext-iconv": "*",
         "symfony/console": "~2.5",
-        "symfony/process": "~2.5",
-        "twig/twig": "^2.4|^3.0"
+        "symfony/process": "~2.5"
     },
     "conflict": {
-        "phpunit/phpunit": "<=4.0",
+        "phpunit/phpunit": "<=4.8.36",
         "symfony/console": "~2.5"
     },
     "suggest": {
@@ -45,5 +42,10 @@
     "bin": [
         "Resources/bin/var-dump-server"
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "config": {
+        "platform": {
+            "php": "5.5.9"
+        }
+    }
 }
